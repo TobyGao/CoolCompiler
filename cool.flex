@@ -78,12 +78,19 @@ W              [wW]
 X              [xX]
 Y              [yY]
 Z              [zZ]
-DARROW          =>
+DARROW         =>
+ASSIGNMENT     <-
 
 CLASS          {C}{L}{A}{S}{S}
 NEW            {N}{E}{W}
 INHERITS       {I}{N}{H}{E}{R}{I}{T}{S}
-FEATURE        {LOWERCASE}{LETTER}
+SELF_TYPE      {S}{E}{L}{F}_{T}{Y}{P}{E}
+IDENTIFIER     {LOWERCASE}{LETTER}*
+VOID           {V}{O}{I}{D}
+INT            {I}{N}{T}
+BOOL           {B}{O}{O}{L}
+STRING         {S}{T}{R}{I}{N}{G}
+
 
 
 %%
