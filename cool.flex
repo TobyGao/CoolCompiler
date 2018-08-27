@@ -49,9 +49,11 @@ extern YYSTYPE cool_yylval;
  * Define names for regular expressions here.
  */
 DIGIT          [0-9]
-LETTER         [a-zA-Z]
+LETTER         [a-zA-Z_]
 LOWERCASE      [a-z]
 UPPERCASE      [A-Z]
+INTEGER        {DIGIT}+
+
 A              [aA]
 B              [bB]
 C              [cC]
@@ -85,13 +87,30 @@ CLASS          {C}{L}{A}{S}{S}
 NEW            {N}{E}{W}
 INHERITS       {I}{N}{H}{E}{R}{I}{T}{S}
 SELF_TYPE      {S}{E}{L}{F}_{T}{Y}{P}{E}
-IDENTIFIER     {LOWERCASE}{LETTER}*
+OBJECT_ID      {LOWERCASE}{LETTER}*
+TYPE_ID        {UPPERCASE}{LETTER}*
 VOID           {V}{O}{I}{D}
+OBJECT         {O}{B}{J}{E}{C}{T}
 INT            {I}{N}{T}
 BOOL           {B}{O}{O}{L}
 STRING         {S}{T}{R}{I}{N}{G}
+IF             {I}{F}
+THEN           {T}{H}{E}{N}
+ELSE           {E}{L}{S}{E}
+FI             {F}{I}
+WHILE          {W}{H}{I}{L}{E}
+LOOP           {L}{O}{O}{P}
+POOL           {P}{O}{O}{L}
+LET            {L}{E}{T}
+CASE           {C}{A}{S}{E}
+OF             {O}{F}
+ESAC           {E}{S}{A}{C}
+NEW            {N}{E}{W}
+ISVOID         {I}{S}{V}{O}{I}{D}
 
 
+TRUE           t{R}{U}{E}
+FALSE          f{A}{L}{S}{E}
 
 %%
 
